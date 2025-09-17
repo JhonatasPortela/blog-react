@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 220" width="900" height="220" role="img" aria-label="Logo JPS">
+  <defs>
+    <!-- soft drop shadow -->
+    <filter id="shadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feDropShadow dx="0" dy="6" stdDeviation="10" flood-color="#000000" flood-opacity="0.14"/>
+    </filter>
+  </defs>
+
+  <rect width="100%" height="100%" fill="transparent"/>
+
+  <!-- central text using tspans to color individual parts -->
+  <g filter="url(#shadow)">
+    <text x="50%" y="50%" text-anchor="middle" dominant-baseline="middle"
+          font-family="Inter, Roboto, system-ui, -apple-system, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+          font-weight="700" font-size="110" letter-spacing="2">
+      <!-- left angle bracket -->
+      <tspan fill="#ff3b30" font-size="110" dx="-12">&lt;</tspan>
+
+      <!-- J in teal -->
+      <tspan fill="#32a88d">J</tspan>
+
+      <!-- P and S in black -->
+      <tspan fill="#000000">P</tspan>
+      <tspan fill="#000000">S</tspan>
+
+      <!-- space then slash and right angle bracket in red -->
+      <tspan fill="#ff3b30" font-size="110" dx="8">/</tspan>
+      <tspan fill="#ff3b30" font-size="110">&gt;</tspan>
+    </text>
+  </g>
+</svg>
